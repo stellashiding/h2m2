@@ -1,0 +1,61 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Summarizer and Analyzer</title>
+    <!-- Link to Google Fonts for rich typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include P5.js library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <script src="assets/backgroundSketch.js"></script>
+    
+    <div id="container">
+        <div id="input-section">
+            <h1>Text Summarizer and Analyzer</h1>
+            <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            <div id="options">
+                <label>
+                    <input type="checkbox" id="summary"> 
+                    <span class="option-label">📄 Summary</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="key_points"> 
+                    <span class="option-label">🔑 Key Points</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="sentiment_analysis"> 
+                    <span class="option-label">❤️ Sentiment Analysis</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="paraphrasing"> 
+                    <span class="option-label">🔄 Paraphrasing</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="question_extraction"> 
+                    <span class="option-label">❓ Question Extraction</span>
+                </label>
+            </div>
+            <button id="analyze-button">Analyze</button>
+        </div>
+        <div id="results-section">
+            <div id="loading" class="hidden">
+                <div id="loading-animation">
+                    <p>Processing...</p>
+                    <script src="assets/loadingSketch.js"></script> <!-- Loading Animation -->
+                </div>
+            </div>
+            <div id="results"></div>
+        </div>
+    </div>
+    
+    <!-- Sentiment Visualization -->
+    <script src="assets/sentimentSketch.js"></script> <!-- Updated Sentiment Sketch -->
+    <!-- Main JavaScript File -->
+    <script src="sketch.js"></script> <!-- Updated Main Script -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+python-dotenv
+openai==1.52
+transformers
+torch
+pydub
+langchain==0.3.4
+langchain-community==0.3.3
